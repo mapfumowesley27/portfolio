@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% block body %}
+<div class="container" xmlns="http://www.w3.org/1999/html">
+<section class="about" id="about">
+    <div class="about-img">
+     <img src="{{url_for('static',filename='img/IMG_20220620_174644.jpg')}}" alt="about picture" class="rounded-circle" style="width: 25vw; margin-top: 30px;">
+    </div>
+    <div class="about-content">
+        <h2 class="heading">
+            About <span>Me</span>
+        </h2>
+        <h3>Software Engineer</h3>
+        <p>Introduction: Hi, I'm [Your Name], a motivated and enthusiastic software engineering student with a passion for creating innovative solutions.
+            As I pursue my degree in software engineering,
+            I'm eager to apply my skills and knowledge in a real-world setting and gain valuable industry experience through an attachment program
+        My Story: Throughout my academic journey, I've developed a strong foundation in software development,
+            with a focus on [specific areas of interest, e.g., artificial intelligence, data science, etc.].
+            I've worked on various projects, including [briefly mention a few projects you've worked on, e
+            .g, a simple chatbot, a web scraper, etc.]. I'm excited to take on new challenges and collaborate with professionals in the industry to learn and grow.
+            What Drives Me: I'm driven by a desire to learn and improve my skills in software engineering.
+            I believe that an attachment program will provide me with the opportunity to gain practical experience, work on real-world projects,
+            and develop a deeper understanding of the industry.
+
+</p>
+    <a href="#" class="btn">Read More</a>
+    </div>
+</section>
+</div>
+{% endblock%}

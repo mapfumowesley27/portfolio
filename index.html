@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+<h1 class="text-center">Welcome to my Portfolio!</h1>
+   <section class="home" id="home">
+      <div class ="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Mapfumo Wesley</h1>
+            <h3>And I'm a <span class="multiple-text" id="multiple-text"></span></h3>
+            <p>hjgjgygyuerfgy ggdsyugjhbvhj  iuauw jhgweygb gfasgaghrfoizbgaius ooirefor fofioysdf iurefgdsgsdgykyrf</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/Mapfumo Wesley "><i class='bx bxl-facebook'></i></a>
+            <a href="linkedin.com/in/wesley-mapfumo"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://wa.me/+263787359122" target="_top"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://github.com/mapfumowesley27 "><i class='bx bxl-github'></i></a>
+        </div>
+           <a href="{{ url_for('download_cv') }}" class="btn">Download CV</a>
+           <a href="{{ url_for('download_resume') }}" class="btn">Download Resume</a>
+      </div>
+
+      <div class="home-img">
+         <img src="{{ url_for('static', filename='img/IMG_20220620_174644.jpg') }}" alt="Profile Picture" class="rounded-circle" style="width: 15vw; margin: 20px auto;">
+      </div>
+
+
+
+   </section>
+</div>
+{% endblock%}
